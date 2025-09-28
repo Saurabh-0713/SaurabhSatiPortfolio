@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Sati - PortFolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <section id="hero">
+    <header>
+      <span class="header-logo">PortFolio</span><span>.</span>
+      <nav>
+        <a class="nav-item" href = "index.html">Home</a>
+        <a class="nav-item" href = "about.html">About</a>
+        <a class="nav-item" href = "education.html">Education</a>
+        <a class="nav-item" href = "hobbies.html">Hobbies</a>
+      </nav>
+      <button class="header-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Let's Talk</button>
+
+    </header>
+
+    <div class="content">
+      <div class="left">
+        <h3>Hey, I'm Saurabh Sati</h3>
+        <h1>Aspiring Quant<span>Researcher</span></h1>
+        <p>
+          Saurabh is a aspiring Quant Researcher who have a very strong interest in the mathematics behind the Machine Learning Models , Learning about Finance and Problem Solving . 
+        </p>
+        <div class="cta-section">
+            <a href="projects.html">
+                <button class="cta-1">Projects <i class="fa-solid fa-code"></i></button>
+            </a>
+          <button class="cta-2" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Hire me <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <div class="social-section">
+          <a href =https://github.com/Saurabh-0713 target="_blank"><i class="fa-brands fa-github"></i></a> 
+          <a href =https://www.instagram.com/_saurbh07_ target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+          <a href="https://www.linkedin.com/in/saurabh-sati-709b09313" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="img-wrap">
+          <img class="hero-img " src="hero.png">
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>I'd love to hear from you! Send me a message using the form below.</p>
+  
+  <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="cta-1">Send Message</button>
+  </form>
+</section>
+
+
+</body>
+
+</html>
